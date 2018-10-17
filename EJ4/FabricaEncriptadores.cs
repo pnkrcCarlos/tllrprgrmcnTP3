@@ -18,7 +18,8 @@ namespace EJ4
         {
             this.iEncriptadores.Add("César", new EncriptadorCesar(14));
             this.iEncriptadores.Add("AES", new EncriptadorAES());
-            // dos más
+            this.iEncriptadores.Add("Reverso", new EncriptadorReverso());
+            this.iEncriptadores.Add("Byte", new EncriptadorByte());
         }
 
         /// <summary>

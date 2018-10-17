@@ -45,8 +45,10 @@
     <Compile Include="ControladorEncriptadores.cs" />
     <Compile Include="Encriptador.cs" />
     <Compile Include="EncriptadorAES.cs" />
+    <Compile Include="EncriptadorByte.cs" />
     <Compile Include="EncriptadorCesar.cs" />
     <Compile Include="EncriptadorNulo.cs" />
+    <Compile Include="EncriptadorReverso.cs" />
     <Compile Include="FabricaEncriptadores.cs" />
     <Compile Include="IEncriptador.cs" />
     <Compile Include="Program.cs" />

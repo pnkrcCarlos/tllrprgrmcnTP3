@@ -23,8 +23,8 @@ namespace EJ4
             Console.WriteLine("Encriptador:");
             Console.WriteLine("[ 1 ] César");
             Console.WriteLine("[ 2 ] AES");
-            Console.WriteLine("[ 3 ] Otro 1");
-            Console.WriteLine("[ 4 ] Otro 2");
+            Console.WriteLine("[ 3 ] Reverso");
+            Console.WriteLine("[ 4 ] Byte");
             Console.WriteLine("[Esc] Salir");
             do
             {
@@ -45,6 +45,12 @@ namespace EJ4
                         break;
                     case '2':
                         encriptador = "AES";
+                        break;
+                    case '3':
+                        encriptador = "Reverso";
+                        break;
+                    case '4':
+                        encriptador = "Byte";
                         break;
                     default:
                         encriptador = "lalalalala";
