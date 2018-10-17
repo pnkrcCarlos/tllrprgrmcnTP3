@@ -10,11 +10,20 @@ namespace EJ4
     {
         private int iDesplazamiento;
 
+        /// <summary>
+        /// Crea una nueva instancia de EncriptadorCesar con el desplazamiento indicado como parámetro.
+        /// </summary>
+        /// <param name="pDesplazamiento">Desplazamiento utilizado para el cifrado.</param>
         public EncriptadorCesar(int pDesplazamiento) : base("César")
         {
             this.iDesplazamiento = pDesplazamiento;
         }
 
+        /// <summary>
+        /// Retorna la cadena que se obtiene de encriptar la cadena pasada como parámetro usando cifrado César.
+        /// </summary>
+        /// <param name="pString">Cadena a encriptar.</param>
+        /// <returns>String.</returns>
         public override String Encriptar(String pString)
         {
             char[] palabra = pString.ToCharArray();
@@ -35,6 +44,11 @@ namespace EJ4
             return new String(palabra);
         }
 
+        /// <summary>
+        /// Retorna la cadena que se obtiene de desencriptar la cadena pasada como parámetro usando cifrado César.
+        /// </summary>
+        /// <param name="pString">Cadena a desencriptar.</param>
+        /// <returns>String.</returns>
         public override String Desencriptar(String pString)
         {
             char[] palabra = pString.ToCharArray();

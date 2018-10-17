@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{889D6FEA-22C9-4699-BF71-BDC0584AF68A}</ProjectGuid>
+    <ProjectGuid>{15B1438C-7C32-49F9-959F-6730DB964B7F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>EJ2</RootNamespace>
-    <AssemblyName>EJ2</AssemblyName>
+    <RootNamespace>EJ3</RootNamespace>
+    <AssemblyName>EJ3</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,13 +42,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CalculadoraGeometrica.cs" />
-    <Compile Include="Circulo.cs" />
-    <Compile Include="FiguraGeometrica.cs" />
+    <Compile Include="ColaFIFO.cs" />
+    <Compile Include="ColaTriaje.cs" />
+    <Compile Include="GuardiaHospital.cs" />
+    <Compile Include="IColaAtencion.cs" />
+    <Compile Include="Paciente.cs" />
+    <Compile Include="PacienteNulo.cs" />
+    <Compile Include="Prioridad.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Punto.cs" />
-    <Compile Include="Triangulo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

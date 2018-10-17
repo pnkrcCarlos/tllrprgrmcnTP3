@@ -21,6 +21,11 @@ namespace EJ4
             // dos más
         }
 
+        /// <summary>
+        /// Retorna el encriptador correspondiente al código pasado como parámetro.
+        /// </summary>
+        /// <param name="pString">Código identificador del encriptador.</param>
+        /// <returns>IEncriptador.</returns>
         public IEncriptador GetEncriptador(String pString)
         {
             if (this.iEncriptadores.ContainsKey(pString))
@@ -33,6 +38,9 @@ namespace EJ4
             }
         }
 
+        /// <summary>
+        /// Retorna la instancia de FabricaEncriptadores.
+        /// </summary>
         public static FabricaEncriptadores Instancia
         {
             get

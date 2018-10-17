@@ -11,6 +11,9 @@ namespace EJ2
         static void Main(string[] args)
         {
             Console.WriteLine("TP3/EJ2");
+            FiguraGeometrica[] figuras = new FiguraGeometrica[] { new Circulo(new Punto(0, 0), 14), new Triangulo(new Punto(0, 0), new Punto(1, 0), new Punto(0, 1)) };
+            CalculadoraGeometrica calculadora = new CalculadoraGeometrica();
+            calculadora.AceptarFigura(figuras);
             Console.ReadKey();
         }
     }
